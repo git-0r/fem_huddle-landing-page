@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+  background-color: #674baf;
+  background-image: url("../images/bg-desktop.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+main .logo {
+  display: block;
+  margin-bottom: 5.5rem;
+}
+
+main .mockup {
+  width: 42vw;
+  margin: 0 2vw 0 4vw;
+}
+
+main .text-content {
+  width: 40vw;
+  display: inline-block;
+  margin: 0 8vw 0 0;
+  color: white;
+  vertical-align: top;
+  font-family: 'Open Sans', sans-serif;
+  padding: 0 3.5rem 0 0.5rem;
+}
+
+main .text-content h1 {
+  font-family: 'Poppins', sans-serif;
+}
+
+main .text-content a {
+  text-decoration: none;
+  color: #674baf;
+  background-color: white;
+  padding: 0.8rem 3.5rem;
+  border-radius: 99em;
+  margin-top: 0.5rem;
+  display: inline-block;
+}
+
+main .text-content a:hover {
+  background-color: #e882e8;
+  color: white;
+  cursor: pointer;
+}
+
+main ul {
+  list-style: none;
+  text-align: right;
+  padding-right: 15rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+main ul li {
+  display: inline-block;
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 0.5rem;
+  margin-right: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+}
+
+main ul li:hover {
+  color: #e882e8;
+  border: 1px solid #e882e8;
+}
+
+@media (min-width: 851px) and (max-width: 1050px) {
+  main .text-content {
+    width: 45vw;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media (max-width: 850px) {
+  main {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    background-image: url("../images/bg-mobile.svg");
+    background-size: contain;
+    text-align: center;
+  }
+  main .logo {
+    width: 45vw;
+    padding: 2rem 0 0 0.5rem;
+    margin-bottom: 4rem;
+  }
+  main .mockup {
+    width: 80vw;
+  }
+  main .text-content {
+    width: 75vw;
+    margin: 2rem 0;
+    padding: 0;
+  }
+  main .text-content h1 {
+    font-size: 150%;
+  }
+  main ul {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 2rem 0;
+    margin: 0;
+  }
+}
+/*# sourceMappingURL=main.css.map */
